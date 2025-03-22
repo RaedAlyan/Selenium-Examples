@@ -16,3 +16,85 @@ This repo contains different examples that are implemented using Selenium.
 ```bash
   pip install webdriver-manager
 ```
+
+## Locators Used
+- In this repository, various types of locators are demonstrated to interact with web elements. Below is a list of the locators used:
+
+### 1. **Basic Locators**
+   - **ID**: Locates an element by its `id` attribute.
+     ```python
+     driver.find_element(By.ID, "element-id")
+     ```
+   - **Class Name**: Locates an element by its `class` attribute.
+     ```python
+     driver.find_element(By.CLASS_NAME, "element-class")
+     ```
+   - **Name**: Locates an element by its `name` attribute.
+     ```python
+     driver.find_element(By.NAME, "element-name")
+     ```
+   - **Tag Name**: Locates an element by its HTML tag name.
+     ```python
+     driver.find_element(By.TAG_NAME, "div")
+     ```
+   - **Link Text**: Locates a link by its exact text.
+     ```python
+     driver.find_element(By.LINK_TEXT, "Click Here")
+     ```
+   - **Partial Link Text**: Locates a link by a substring of its text.
+     ```python
+     driver.find_element(By.PARTIAL_LINK_TEXT, "Click")
+     ```
+
+### 2. **CSS Selectors**
+   - **ID**: Locates an element using the `#` symbol.
+     ```python
+     driver.find_element(By.CSS_SELECTOR, "#element-id")
+     ```
+   - **Class Name**: Locates an element using the `.` symbol.
+     ```python
+     driver.find_element(By.CSS_SELECTOR, ".element-class")
+     ```
+   - **Single Attribute**: Locates an element using an attribute.
+     ```python
+     driver.find_element(By.CSS_SELECTOR, "input[type='text']")
+     ```
+   - **Multiple Attributes**: Combines multiple attributes for precise targeting.
+     ```python
+     driver.find_element(By.CSS_SELECTOR, "input[type='text'][name='username']")
+     ```
+   - **Wildcards**:
+     - `*`: Matches elements where the attribute contains a specific substring.
+       ```python
+       driver.find_element(By.CSS_SELECTOR, "input[name*='user']")
+       ```
+     - `^`: Matches elements where the attribute starts with a specific substring.
+       ```python
+       driver.find_element(By.CSS_SELECTOR, "input[name^='user']")
+       ```
+     - `$`: Matches elements where the attribute ends with a specific substring.
+       ```python
+       driver.find_element(By.CSS_SELECTOR, "input[name$='name']")
+       ```
+     - `~`: Matches elements where the attribute contains a specific word.
+       ```python
+       driver.find_element(By.CSS_SELECTOR, "input[class~='button']")
+       ```
+
+### 3. **XPath**
+   - **Relative XPath**: Locates an element relative to another element.
+     ```python
+     driver.find_element(By.XPATH, "//div[@id='container']//input")
+     ```
+   - **Absolute XPath**: Locates an element using the full path from the root.
+     ```python
+     driver.find_element(By.XPATH, "/html/body/div/input")
+     ```
+   - **XPath Axes**: Uses axes like `parent`, `child`, `ancestor`, etc., for navigation.
+     ```python
+     driver.find_element(By.XPATH, "//div[@id='container']/child::input")
+     ```
+   - **XPath Functions**: Uses functions like `contains()`, `starts-with()`, and `text()`.
+     ```python
+     driver.find_element(By.XPATH, "//div[contains(@class, 'example')]")
+     ```
