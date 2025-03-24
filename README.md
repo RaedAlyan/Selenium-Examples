@@ -98,3 +98,18 @@ This repo contains different examples that are implemented using Selenium.
      ```python
      driver.find_element(By.XPATH, "//div[contains(@class, 'example')]")
      ```
+
+## Advanced Web Elements
+- This repo includes examples of handling advanced web elements, such as:
+### 1. Dropdowns
+- **Dropdowns** are commonly used in web applications for selecting options.
+- There are two types of dropdowns:
+  - **Static Dropdown**:
+    - it's created using the `<select>` tag, and we **can** interact with it using `Select` class.
+  - **Dynamic Dropdown**:
+    - it's not created using the `<select>` tag, and we **can't** interact with it using 'Select' class.
+    - To interact with dynamic dropdown:
+      - Locate the dynamic dropdown.
+      - Click on (or type something) the dynamic dropdown to expand it.
+      - Wait for options to load.
+      - Locate and click the desired option.
