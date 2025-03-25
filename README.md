@@ -117,3 +117,10 @@ This repo contains different examples that are implemented using Selenium.
 - **Checkboxes** allow users to select one or multiple choices from a set.
 ### 3. Radio Button
 - **Radio button** allow users to select only one option from a set.
+### 4. Alert popup
+- **Alert popup** isn't part of the DOM, and Selenium can't locate it using locators.
+- To interact with alert popup, we need to switch to it and perform required actions such as `accept()`, `dismiss()`, `text`, and `send_keys()`.
+- We can switch to an alert popup using this command:
+    ```python
+    alert = driver.switch_to.alert
+    ```
