@@ -115,3 +115,5 @@ This repo contains different examples that are implemented using Selenium.
       - Locate and click the desired option.
 ### 2. Checkboxes
 - **Checkboxes** allow users to select one or multiple choices from a set.
+### 3. Radio Button
+- **Radio button** allow users to select only one option from a set.
