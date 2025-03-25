@@ -113,3 +113,5 @@ This repo contains different examples that are implemented using Selenium.
       - Click on (or type something) the dynamic dropdown to expand it.
       - Wait for options to load.
       - Locate and click the desired option.
+### 2. Checkboxes
+- **Checkboxes** allow users to select one or multiple choices from a set.
