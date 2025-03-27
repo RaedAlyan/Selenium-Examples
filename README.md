@@ -124,3 +124,11 @@ This repo contains different examples that are implemented using Selenium.
     ```python
     alert = driver.switch_to.alert
     ```
+## Synchronization
+- Selenium provides three wait strategies:
+### 1. Implicit Wait
+- Implicit wait is a syn technique that allows to pause test execution for a certain amount of time before throwing a NoSuchElementException if the element isn’t found.
+### 2. Explicit Wait
+- Explicit wait is a sync technique that allows to pause test execution until a specific condition is met or a timeout is reached.
+### 3. Fluent Wait
+- Fluent wait is an advanced sync technique that provides flexible, customizable waiting for elements with: configurable max timeout, adjustable polling frequency, ability to ignore specific conditions, and custom wait conditions.
