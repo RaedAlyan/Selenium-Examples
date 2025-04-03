@@ -136,3 +136,6 @@ This repo contains different examples that are implemented using Selenium.
 ## Action Chains
 - **Action Chains** are a powerful feature in Selenium that automates and handles complex user interactions.
 - This repo automates some common action chains such as: click, double-click, context-click, hover-over-element, and drag-and-drop Action Chains.
+
+## Window Handles
+- Window Handles allows to work with multiple browser windows or tabs.
