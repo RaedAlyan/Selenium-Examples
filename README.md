@@ -129,6 +129,24 @@ alert.dismiss()   # Click Cancel
 # For prompts (input fields)
 alert.send_keys("Sample text")  # Type into prompt
 alert.accept()
+
+
+# ===== IFrames =====
+# Switch to iframe by index (0-based)
+driver.switch_to.frame(0)
+
+# Switch to iframe by name/id
+driver.switch_to.frame("iframe-name")
+
+# Switch to iframe using WebElement
+iframe = driver.find_element(By.CSS_SELECTOR, "iframe.modal")
+driver.switch_to.frame(iframe)
+
+# Return to main content
+driver.switch_to.default_content()
+
+# Switch to parent frame (nested iframes)
+driver.switch_to.parent_frame()
 ```
 
 ## ⏱ Synchronization Strategies
