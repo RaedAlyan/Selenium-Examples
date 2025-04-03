@@ -132,3 +132,7 @@ This repo contains different examples that are implemented using Selenium.
 - Explicit wait is a sync technique that allows to pause test execution until a specific condition is met or a timeout is reached.
 ### 3. Fluent Wait
 - Fluent wait is an advanced sync technique that provides flexible, customizable waiting for elements with: configurable max timeout, adjustable polling frequency, ability to ignore specific conditions, and custom wait conditions.
+
+## Action Chains
+- **Action Chains** are a powerful feature in Selenium that automates and handles complex user interactions.
+- This repo automates some common action chains such as: click, double-click, context-click, hover-over-element, and drag-and-drop Action Chains.
