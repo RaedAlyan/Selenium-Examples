@@ -1,3 +1,10 @@
+"""
+This script automates handling fluent wait technique.
+
+@author: Raed Eleyan.
+@date: 04/03/2025.
+@contact: raedeleyan1@gmail.com
+"""
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
