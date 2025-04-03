@@ -1,3 +1,10 @@
+"""
+This script automates handling radio button WebElements.
+
+@author: Raed Eleyan.
+@date: 04/03/2025.
+@contact: raedeleyan1@gmail.com
+"""
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service

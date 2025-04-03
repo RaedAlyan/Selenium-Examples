@@ -1,3 +1,10 @@
+"""
+This script automates handling dynamic dropdown WebElement.
+
+@author: Raed Eleyan.
+@date: 04/03/2025.
+@contact: raedeleyan1@gmail.com
+"""
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
