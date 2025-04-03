@@ -7,7 +7,6 @@ from selenium.webdriver import ActionChains
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get('https://rahulshettyacademy.com/angularpractice/')
 driver.maximize_window()
-driver.implicitly_wait(10)
 radio_button_element = driver.find_element(By.ID, 'inlineRadio2')
 # initiate an object from ActionChains class
 actions = ActionChains(driver)
