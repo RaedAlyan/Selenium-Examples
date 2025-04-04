@@ -208,4 +208,9 @@ driver.get("https://example.com")
 # Close and return to main
 driver.close()
 driver.switch_to.window(main_window)
+
+
+# ===== JavaScript Execution  =====
+# Execute a JS command
+driver.execute_script("js_code")
 ```
